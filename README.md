@@ -1,0 +1,2 @@
+# ergcalculator
+Rowing Erg Calculator
