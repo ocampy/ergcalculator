@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <link rel="stylesheet" type="text/css" href="static/style.css" />
+</head>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUaHiYQhwiQE3sx3Xuv6dOYHf_raSGrpVM0-cl_C8bDQ&usqp=CAU&ec=48600113" alt="MMR">
+<body>
+ <div class="login">
+	<h1>Rowing Erg Calculator</h1>
+
+    <form action="{{ url_for('predict')}}"method="post">
+        <p>Enter Time:
+          <input type="tminutes" name="tminutes" placeholder="Enter Minutes" autocomplete="0" />
+          <input type="tseconds" name="tseconds" placeholder="Enter Seconds" autocomplete="0" />
+        </p>
+      <p>Enter Split:
+        <input type="sminutes" name="sminutes" placeholder="Enter Minutes" autocomplete="0" />
+        <input type="sseconds" name="sseconds" placeholder="Enter Seconds" autocomplete="0" />
+      </p>
+      <p>Enter Distance:
+        <input type="text" name="distance" placeholder="Enter Distance" autocomplete="0" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Calculate</button>
+      </p>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+</body>
+</html>

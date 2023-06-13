@@ -1,0 +1,17 @@
+body {
+	background-color: lightyellow;
+}
+
+h1{
+	color: navy;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+	align-items: center;
+}
+
+h4 {
+	text-indent: 25%;
+}
